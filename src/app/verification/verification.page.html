@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Verification</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button fill="solid" expand="block" color="dark" (click)="sendVerification()">Verify your email</ion-button>
+  <ion-textarea *ngIf="sentTimestamp"> Verification email sent at {{sentTimestamp | date: 'medium'}}. </ion-textarea>
+</ion-content>

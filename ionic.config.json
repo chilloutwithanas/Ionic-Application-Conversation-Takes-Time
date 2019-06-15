@@ -1,5 +1,7 @@
 {
   "name": "basic-login",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
