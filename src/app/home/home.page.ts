@@ -13,7 +13,6 @@ interface User {
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  sentTimestamp;
   user: User = {
     email: 'anaskhan@gmail.com',
     password: 'aswin@123',
@@ -63,10 +62,5 @@ export class HomePage {
 
   goto() {
     this.router.navigateByUrl('/verification');
-  }
-
-  sendVerification() {
-    this.afAuth.auth.currentUser.sendEmailVerification();
-    this.sentTimestamp = new Date();
   }
 }
