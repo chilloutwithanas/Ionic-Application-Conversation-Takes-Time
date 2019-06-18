@@ -63,4 +63,8 @@ export class HomePage {
   goto() {
     this.router.navigateByUrl('/verification');
   }
+
+  gotoPhone() {
+    this.router.navigateByUrl('/phonenumber');
+  }
 }

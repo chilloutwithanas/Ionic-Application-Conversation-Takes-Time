@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Phone Number Verification</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button fill="solid" expand="block" color="dark" (click)="send()" >SEND OTP</ion-button>
+  <ion-input type="text" placeholder="Enter OTP" [(ngModel)]="code"></ion-input>
+  <ion-button fill="solid" expand="block" color="dark" (click)="verify()" >VERIFY</ion-button>
+</ion-content>

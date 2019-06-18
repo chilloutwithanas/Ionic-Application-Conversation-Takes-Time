@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "353408953286",
+    "firebase_url": "https://fir-auth-email-b5ef7.firebaseio.com",
+    "project_id": "fir-auth-email-b5ef7",
+    "storage_bucket": "fir-auth-email-b5ef7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353408953286:android:4134f036375c32d4",
+        "android_client_info": {
+          "package_name": "com.anaskhan.sms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353408953286-r6la98lm9cpi2nth67vjjuoervds3f74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anaskhan.sms",
+            "certificate_hash": "7bca31454a7762e2a7de30fba4c7526ece94c1c3"
+          }
+        },
+        {
+          "client_id": "353408953286-ifp3ovq25p3mh6ics6td8m6g39q4phig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC_2DKpq-IXaqgrzRtoG25H29JtCaVUXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353408953286-ifp3ovq25p3mh6ics6td8m6g39q4phig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
