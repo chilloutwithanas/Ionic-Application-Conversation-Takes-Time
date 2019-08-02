@@ -1,14 +1,76 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Phone Number Verification</ion-title>
+    <ion-title>The User List</ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<!-- <ion-content>
   <ion-button fill="solid" expand="block" color="dark" (click)="send()" >SEND OTP</ion-button>
   <ion-input type="text" placeholder="Enter OTP" [(ngModel)]="code"></ion-input>
   <ion-button fill="solid" expand="block" color="dark" (click)="verify()" >VERIFY</ion-button>
+</ion-content> -->
+<ion-content fullscreen>
+  <ion-list>
+    <ion-list-header>
+      Recent Conversations
+    </ion-list-header>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./assets/images/four.png" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Flower 1</h2>
+        <h3>I'm a big flower</h3>
+        <p>Listen, I am a pretty flower...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./assets/images/one.png" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Flower 2</h2>
+        <h3>Look, kid...</h3>
+        <p>I've got enough on my plate as it is, and I...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./assets/images/seven.png" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Flower 3</h2>
+        <h3>I can handle myself</h3>
+        <p>You will remove these restraints and leave...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./assets/images/six.png" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Flower 4</h2>
+        <h3>Your thoughts betray you</h3>
+        <p>I feel the good in you, the conflict...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./assets/images/two.png" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Flower 5</h2>
+        <h3>Your thoughts betray you</h3>
+        <p>I feel the good in you, the conflict...</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

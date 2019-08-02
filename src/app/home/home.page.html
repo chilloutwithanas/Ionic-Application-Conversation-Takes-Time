@@ -1,30 +1,49 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-title>Login</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content padding>
-    <ion-list>
+  <ion-toolbar>
+    <ion-title>Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-      
-  
-      <ion-item>
-        <ion-label position="floating">Username</ion-label>
-        <ion-input type="text" [(ngModel)]="user.email"></ion-input>
-      </ion-item>
-      
-      <ion-item>
-        <ion-label position="floating">Password</ion-label>
-        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
-      </ion-item>
-      
-      </ion-list>
-  
-      <ion-button fill="solid" expand="block" color="dark" (click)="login()" >Login</ion-button>
-      <ion-button fill="solid" expand="block" color="dark" (click)="goto()">Verification</ion-button>
-      <ion-button fill="solid" expand="block" color="dark" (click)="createAccount();">Create Account</ion-button>
-      <ion-button fill="solid" expand="block" color="dark" (click)="logout()">Logout</ion-button>
-      <ion-button fill="solid" expand="block" color="dark" (click)="gotoPhone()">Login with Phone Number</ion-button>
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
 
-  </ion-content>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button fill="solid" expand="block" color="success" (click)="login()">
+    <ion-icon name="log-in" slot="start"></ion-icon>
+    Login
+  </ion-button>
+
+  <ion-button fill="solid" expand="block" color="dark" (click)="goto()">
+    <ion-icon name="mail" slot="start"></ion-icon>
+    Email Verification
+  </ion-button>
+
+  <ion-button fill="solid" expand="block" color="medium" (click)="createAccount()">
+    <ion-icon name="create" slot="start"></ion-icon>
+    Create Account
+  </ion-button>
+
+  <ion-button fill="solid" expand="block" color="light" (click)="logout()">
+    <ion-icon name="log-out" slot="start"></ion-icon>
+    Logout
+  </ion-button>
+
+  <ion-button fill="solid" expand="block" color="secondary" (click)="listthePhone()">
+    <ion-icon name="list-box" slot="start"></ion-icon>
+    Lets See The List
+  </ion-button>
+
+  <!-- <ion-button fill="solid" expand="block" color="primary" (click)="googleSignin()">
+    <ion-icon name="logo-google" slot="start"></ion-icon>
+    Google Login
+  </ion-button> -->
+</ion-content>

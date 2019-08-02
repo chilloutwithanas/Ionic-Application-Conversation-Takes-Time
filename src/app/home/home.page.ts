@@ -3,6 +3,13 @@ import { AngularFireAuth } from '@angular/fire/auth';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
+import { auth } from 'firebase/app';
+import {
+  AngularFirestore,
+  AngularFirestoreDocument
+} from '@angular/fire/firestore';
+
+
 interface User {
   email?: string;
   password?: string;
@@ -19,7 +26,9 @@ export class HomePage {
   };
 
 
-  constructor(public afAuth: AngularFireAuth, public alertController: AlertController, private router: Router) {}
+  constructor(public alertController: AlertController, private afAuth: AngularFireAuth,
+              private afs: AngularFirestore,
+              private router: Router) {}
 
   async createAccount() {
     await this.afAuth.auth.createUserWithEmailAndPassword(
@@ -54,6 +63,7 @@ export class HomePage {
 
     await alert.present();
 
+    this.router.navigateByUrl('/phonenumber');
 
   }
   async logout() {
@@ -64,7 +74,17 @@ export class HomePage {
     this.router.navigateByUrl('/verification');
   }
 
-  gotoPhone() {
+  listthePhone() {
     this.router.navigateByUrl('/phonenumber');
+  }
+
+  async googleSignin() {
+    const provider = new auth.GoogleAuthProvider();
+    const credential = await this.afAuth.auth.signInWithPopup(provider);
+
+  }
+  async signOut() {
+    await this.afAuth.auth.signOut();
+    this.router.navigate(['/']);
   }
 }
